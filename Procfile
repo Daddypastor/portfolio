@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn excelcart.wsgi
+web: python manage.py migrate && gunicorn myportfolio.wsgi
