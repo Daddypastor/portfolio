@@ -151,7 +151,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #DEPLOYMENT
 
 if DEBUG == False:
-    CSRF_TRUSTED_ORIGINS = ['https://excelcart-production.up.railway.app','https://excelcart.com.ng']
+    CSRF_TRUSTED_ORIGINS = ['https://emmaexcellent-production.up.railway.app']
 
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
