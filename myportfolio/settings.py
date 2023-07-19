@@ -28,12 +28,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 if DEBUG:
-    ALLOWED_HOSTS = ['127.0.0.1']
+    ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
 else:
-    ALLOWED_HOSTS = ['emmaexcellent-production.up.railway.app','127.0.0.1']
+    ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
 
 
 # Application definition
