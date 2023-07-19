@@ -30,9 +30,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 if DEBUG:
-    ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
+    ALLOWED_HOSTS = ['127.0.0.1','portfolio-one-mu-14.vercel.app']
 else:
-    ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
+    ALLOWED_HOSTS = ['portfolio-one-mu-14.vercel.app','127.0.0.1']
 
 
 # Application definition
@@ -150,7 +150,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #DEPLOYMENT
 
 if DEBUG == False:
-    CSRF_TRUSTED_ORIGINS = ['https://emmaexcellent-production.up.railway.app']
+    CSRF_TRUSTED_ORIGINS = ['portfolio-one-mu-14.vercel.app']
 
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
@@ -160,9 +160,3 @@ if DEBUG == False:
     SECURE_HSTS_PRELOAD = True
     SECURE_CONTENT_TYPE_NOSNIFF = True
 
-
-
-# Update database configuration from $DATABASE_URL.
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
